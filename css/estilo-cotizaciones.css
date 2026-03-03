@@ -1,5 +1,6 @@
 .body-index {
     padding-top: 70px; /* debe ser igual o ligeramente mayor a la altura del navbar */
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .body-paginas {
@@ -536,9 +537,11 @@ MANÚ
 
 /* Contenedor exterior */
 .navbar-wrapper {
-    position: fixed;
+    position: fixed;   /* o sticky si estás usando sticky */
     top: 5px;
     width: 100%;
+    background: transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
     z-index: 1000;
 }
 
