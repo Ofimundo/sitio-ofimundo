@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ofimundo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/estilo-cotizaciones.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="js/03.modo-oscuro.js" async></script>
+</head>
+
+<body class="font-sans antialiased body-index">
+
+    <!-- Header / MENÚ NAVEGABLE -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo-ofimundo.png" alt="Ofimundo">
+                </a>
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">
+                        Soluciones y Servicios
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+
+                    <div class="mega-menu">
+                        
+                        <a href="https://www.ofimundo.cl/servicios/mps.html" target="_blank" class="mega-item">
+                            <div class="icon">
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <div class="text">
+                                <h4>MPS</h4>
+                                <p>Servicio de Impresión Gestionado</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.ofimundo.cl/servicios/smart-office.html" target="_blank" class="mega-item">
+                            <div class="icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Salas Inmersivas</h4>
+                                <p>Reuniones inmersivas con tecnología</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.ofimundo.cl/servicios/rpa.html" target="_blank" class="mega-item">
+                            <div class="icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Automatización</h4>
+                                <p>Automatiza tareas repetitivas</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.ofimundo.cl/servicios/daas.html" target="_blank" class="mega-item">
+                            <div class="icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="text">
+                                <h4>DaaS</h4>
+                                <p>Arriendo de equipos de cómputo</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </li>
+                <li><a href="https://www.ofimundo.cl/aniversario/">Somos Ofimundo</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="https://www.ofimundo.cl/contacto.html">Contacto</a></li>
+                <!--Switch-->
+                <button id="theme-switch" class="mx-2 cursor-pointer nav-item nav-link ps-2 d-flex justify-content-between">
+                    <svg id="theme-icon" width="16" height="16" fill="#435571" class="bi bi-sun" viewBox="0 0 16 16">
+                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                    </svg>
+                </button>
+            </ul>
+
+            <!-- Botón -->
+            <div class="nav-button">
+                <a href="https://www.ofimundo.cl/micuenta/default.php" target="_blank" class="btn-account bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                    MI CUENTA
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    
+    <!-- Hero Section - CHAT -->
+    <section id="chat" class="hero-gradient pt-10 pb-2 px-4 min-h-screen">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-2">
+                <h1 class="title-xl text-5xl text-gradient leading-snug">Encuentra el producto ideal para tu Empresa</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Cuentanos lo que necesitas y te recomendaremos las mejores opciones</p>
+            </div>
+            
+            <!-- Chat Container -->
+            <div id="chatContainer" class="bg-white rounded-3xl shadow-xl overflow-hidden chat-compact">
+                <!-- Chat Header -->
+                <div class="bg-gradient-to-r from-ofimundo-purple to-ofimundo-magenta px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center avatar-pulse">
+                            <svg class="w-6 h-6 text-ofimundo-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-grey">Asistente Ofimundo</h3>
+                            <p class="text-xs text-grey/70">En línea • Responde al instante</p>
+                        </div>
+                    </div>
+                    <button id="restartBtn" class="text-white/70 hover:text-white transition p-2 rounded-full hover:bg-white/10 hidden" onclick="restartChat()">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Chat Messages Area -->
+                <div id="chatArea" class="chat-scroll overflow-y-auto p-6 space-y-4 bg-gray-50">
+                    <!-- Los mensajes se agregarán aquí dinámicamente -->
+                </div>
+
+                <!-- Quick Replies Area -->
+                <div id="quickRepliesArea" class="border-t border-gray-100 p-4 bg-white">
+                    <!-- Las opciones de respuesta rápida se mostrarán aquí -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados-->
+    <section id='categorias' class="py-16 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-5xl leading-snug  text-gradient title-xl mb-2">Destacadas</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Product Card 1 -->
+                <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                        <img src="images/equipos/multifuncional/WF-C5891.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                            WorkForce® Pro WF-C5891
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                            Impresora láser multifunción ideal para oficinas.
+                        </p>
+
+                        <div class="flex items-center gap-10 mt-auto">
+                            <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                Abrir Cotización
+                            </button>
+
+                            <a href="02.detalle.html"
+                            class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                Quiero saber más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                        <img src="images/equipos/multifuncional/WF-M5899.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                            WorkForce Pro WF-M5899
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                            Multifuncional que maximiza tu productividad con 25 ppm ISO.
+                        </p>
+
+                        <div class="flex items-center gap-10 mt-auto">
+                            <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                Abrir Cotización
+                            </button>
+
+                            <a href="02.detalle.html"
+                            class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                Quiero saber más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                        <img src="images/equipos/multifuncional/M3170.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                            EcoTank M3180
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                            Revoluciona su oficina con ahorros de hasta el 90%.
+                        </p>
+                        <div class="flex items-center gap-10 mt-auto">
+                            <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                Abrir Cotización
+                            </button>
+
+                            <a href="02.detalle.html"
+                            class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                Quiero saber más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </br>
+        </div>
+    </section>
+
+    <div class="app-container">
+        <!-- Sidebar de Filtros -->
+        <aside id="filterSidebar" class="filter-sidebar">
+            <div class="sidebar-inner">
+                <!-- Header -->
+                <div class="sidebar-header">
+                    <div class="sidebar-header-content">
+                        <div class="sidebar-title">
+                            <div class="sidebar-title-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <div>
+                                <h2>Filtros</h2>
+                                <p>Refina tu busqueda</p>
+                            </div>
+                        </div>
+                        <button id="closeSidebar" class="close-sidebar-btn" title="Cerrar filtros">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filtros activos -->
+                <div id="sidebarActiveFilters" class="active-filters">
+                    <!-- Tags dinamicos -->
+                </div>
+
+                <!-- Contenido de filtros -->
+                <div class="sidebar-content">
+                    <!-- Marca -->
+                    <div class="filter-section open" data-filter="marca">
+                        <div class="filter-section-header">
+                            <span>Marca</span>
+                            <i class="fas fa-chevron-down chevron"></i>
+                        </div>
+                        <div class="filter-section-content">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="marca" value="epson">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Epson</span>
+                                <span class="count">3</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="marca" value="kyocera">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Kyocera</span>
+                                <span class="count">2</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="marca" value="xerox">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Xerox</span>
+                                <span class="count">1</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="marca" value="brother">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Brother</span>
+                                <span class="count">0</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="marca" value="lexmark">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Lexmark</span>
+                                <span class="count">0</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Tamano Papel -->
+                    <div class="filter-section" data-filter="tamano">
+                        <div class="filter-section-header">
+                            <span>Tamano de Papel</span>
+                            <i class="fas fa-chevron-down chevron"></i>
+                        </div>
+                        <div class="filter-section-content">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="tamano" value="a3">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">A3</span>
+                                <span class="count">2</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="tamano" value="a4">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">A4</span>
+                                <span class="count">4</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Tipo de Salida -->
+                    <div class="filter-section" data-filter="salida">
+                        <div class="filter-section-header">
+                            <span>Tipo de Salida</span>
+                            <i class="fas fa-chevron-down chevron"></i>
+                        </div>
+                        <div class="filter-section-content">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="salida" value="color">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Color</span>
+                                <span class="count">3</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="salida" value="bn">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Blanco y Negro</span>
+                                <span class="count">3</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Velocidad -->
+                    <div class="filter-section" data-filter="velocidad">
+                        <div class="filter-section-header">
+                            <span>Velocidad (PPM)</span>
+                            <i class="fas fa-chevron-down chevron"></i>
+                        </div>
+                        <div class="filter-section-content">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="velocidad" value="hasta-20">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">Hasta 20 PPM</span>
+                                <span class="count">1</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="velocidad" value="21-35">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">21 a 35 PPM</span>
+                                <span class="count">3</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-filter="velocidad" value="36-mas">
+                                <span class="checkmark"><i class="fas fa-check"></i></span>
+                                <span class="label">36+ PPM</span>
+                                <span class="count">2</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="sidebar-footer">
+                    <button id="clearFilters" class="btn-clear">
+                        <i class="fas fa-eraser"></i> Limpiar
+                    </button>
+                    <button id="applyFilters" class="btn-apply">
+                        <i class="fas fa-check"></i> Aplicar
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content bg-white">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <button id="filterToggle" class="filter-toggle-btn">
+                        <i class="fas fa-sliders"></i>
+                            <span>Filtrar Productos</span>
+                        <span class="badge" id="filterBadge">0</span>
+                    </button>
+                    <p class="results-text">
+                        Mostrando <span id="resultsCount">6</span> productos
+                    </p>
+                </div>
+
+                <!-- Tags de filtros en toolbar -->
+                <div id="toolbarFilters" class="toolbar-filters">
+                    <!-- Tags dinamicos -->
+                </div>
+            </div>
+
+            <!-- Sección de Categoria de Productos -->
+            <section id='categorias' class="py-1 px-4 bg-white">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-8">
+                        <h2 class="text-5xl leading-snug  text-gradient title-xl mb-2">Categoría Impresoras</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Product Card 1 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/impresoras/WF-M5399.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    WF-M5399
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Robusto equipo de impresión monocromática que ofrece alta productividad.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/impresoras/M1180.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    EcoTank M1180
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Maximiza su productividad con una primera página en 6 segundos y 20 ppm.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/impresoras/ECOSYS-PA-4500X.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    ECOSYS PA4500x
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Es una impresora láser monocromo potente que maximiza la productividad.
+                                </p>
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </br>
+                    <!-- Fila siguiente de productos -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Product Card 4 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/impresoras/ECOSYS-PA5500x.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    ECOSYS PA5500x
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Ofrece eficiencia y fiabilidad excepcionales.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/multifuncional/WF-M5899.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    WorkForce Pro WF-M5899
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Multifuncional que maximiza tu productividad con 25 ppm ISO.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/multifuncional/M3170.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    EcoTank M3180
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Revoluciona su oficina con ahorros de hasta el 90%.
+                                </p>
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </br>
+                    <!-- Fila siguiente de productos -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Product Card 7 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/impresoras/ECOSYS-PA5500x.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    ECOSYS PA5500x
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Ofrece eficiencia y fiabilidad excepcionales.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 8 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/multifuncional/WF-M5899.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    WorkForce Pro WF-M5899
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Multifuncional que maximiza tu productividad con 25 ppm ISO.
+                                </p>
+
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 9 -->
+                        <div class="card-hover relative bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
+                            <div class="h-[275px] flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-50">
+                                <img src="images/equipos/multifuncional/M3170.png" alt="Impresora Multifunción HP" class="max-h-full max-w-full" >
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-ofimundo-red text-white text-xs font-bold rounded-full">-25% OFF</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="nombre-producto text-lg font-bold text-ofimundo-navy mb-2">
+                                    EcoTank M3180
+                                </h3>
+                                <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                                    Revoluciona su oficina con ahorros de hasta el 90%.
+                                </p>
+                                <div class="flex items-center gap-10 mt-auto">
+                                    <button class="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+                                        Abrir Cotización
+                                    </button>
+
+                                    <a href="02.detalle.html"
+                                    class="flex-1 text-center px-4 py-3 border border-gray-300 text-ofimundo-navy rounded-lg text-sm font-medium hover:bg-ofimundo-navy transition">
+                                        Quiero saber más
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="error">
+                <!-- Mensaje sin resultados -->
+                <div id="noResults" class="hidden text-center py-16">
+                    <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-3xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">No se encontraron productos</h3>
+                    <p class="text-gray-500">Intenta ajustar los filtros para ver mas resultados</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer - Diseño en capas con wave -->
+    <footer class="relative bg-gray-900 overflow-hidden">
+        <!-- Wave decorativo -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-20" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                    fill="url(#gradient)" opacity="0.3"></path>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+            <!-- Grid principal con fondo semi-transparente -->
+            <div class="bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm rounded-3xl p-8 sm:p-12 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- Logo -->
+                    <div>
+                        <img src="images/logo-ofimundo.png"
+                            alt="Ofimundo" 
+                            class="h-12 brightness-0 invert mb-6">
+                        <p class="text-white/90 text-base mb-6 leading-relaxed">
+                            Tu transformación,<br>nuestra pasión
+                        </p>
+                        <div class="flex gap-3">
+                            <!-- YouTube -->
+                            <a href="https://www.youtube.com/@Ofimundo." class="w-11 h-11 bg-gradient-to-br from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 rounded-xl flex items-center justify-center transition-all shadow-lg">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/company/ofimundo/?originalSubdomain=cl" class="w-11 h-11 bg-gradient-to-br from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 rounded-xl flex items-center justify-center transition-all shadow-lg">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/ofimundo_empresas" class="w-11 h-11 bg-gradient-to-br from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 rounded-xl flex items-center justify-center transition-all shadow-lg">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Empresa -->
+                    <div>
+                        <h4 class="text-white font-bold text-lg mb-5 flex items-center gap-2">
+                            <span class="w-1 h-6 bg-gradient-to-b from-pink-500 to-purple-600 rounded-full"></span>
+                            Empresa
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="landing.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Home</a></li>
+                            <li><a href="https://www.ofimundo.cl/aniversario" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Somos Ofimundo</a></li>
+                            <li><a href="../contacto.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Servicios -->
+                    <div>
+                        <h4 class="text-white font-bold text-lg mb-5 flex items-center gap-2">
+                            <span class="w-1 h-6 bg-gradient-to-b from-pink-500 to-purple-600 rounded-full"></span>
+                            Servicios
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="/servicios/mps.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">MPS</a></li>
+                            <li><a href="/servicios/smart-office.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Salas Inmersivas</a></li>
+                            <li><a href="/servicios/rpa.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Automatización</a></li>
+                            <li><a href="/servicios/daas.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">DaaS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Legal e Info -->
+                    <div>
+                        <h4 class="text-white font-bold text-lg mb-5 flex items-center gap-2">
+                            <span class="w-1 h-6 bg-gradient-to-b from-pink-500 to-purple-600 rounded-full"></span>
+                            Legal
+                        </h4>
+                        <ul class="space-y-3 mb-6">
+                            <li><a href="../politica-de-privacidad-de-datos.html" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Política de Privacidad</a></li>
+                            <li><a href="https://www.ofimundo.cl/micuenta/default.php" class="text-white/80 hover:text-white hover:translate-x-1 transition-all inline-block">Mi Cuenta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-white/60 text-sm">
+                    Copyright © 2025 | Ofimundo, todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cargar el JS del chat -->
+    <script src="js/01.chat.js"></script>
+
+    <script>
+        /* =========================
+        3️⃣ FILTROS
+        ========================= */
+
+        // ===== ELEMENTOS DEL DOM =====
+        const filterSidebar = document.getElementById('filterSidebar');
+        const filterToggle = document.getElementById('filterToggle');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const clearFilters = document.getElementById('clearFilters');
+        const applyFilters = document.getElementById('applyFilters');
+        const productsGrid = document.getElementById('productsGrid');
+        const resultsCount = document.getElementById('resultsCount');
+        const filterBadge = document.getElementById('filterBadge');
+        const sidebarActiveFilters = document.getElementById('sidebarActiveFilters');
+        const toolbarFilters = document.getElementById('toolbarFilters');
+        const noResults = document.getElementById('noResults');
+
+        // Secciones de filtro
+        const filterSections = document.querySelectorAll('.filter-section');
+        const filterCheckboxes = document.querySelectorAll('.filter-checkbox input');
+        const productCards = document.querySelectorAll('.product-card:not(.no-results)');
+
+        // ===== ESTADO =====
+        let sidebarOpen = false;
+        let activeFilters = {
+            marca: [],
+            tamano: [],
+            salida: [],
+            velocidad: []
+        };
+
+        // ===== FUNCIONES =====
+
+        // Alternar sidebar
+        function toggleSidebar() {
+            sidebarOpen = !sidebarOpen;
+            filterSidebar.classList.toggle('open', sidebarOpen);
+            filterToggle.classList.toggle('active', sidebarOpen);
+        }
+
+        // Cerrar sidebar
+        function closeSidebarFn() {
+            sidebarOpen = false;
+            filterSidebar.classList.remove('open');
+            filterToggle.classList.remove('active');
+        }
+
+        // Alternar seccion de filtro
+        function toggleFilterSection(section) {
+            section.classList.toggle('open');
+        }
+
+        // Obtener label legible
+        function getFilterLabel(filterType, value) {
+            const labels = {
+                marca: { epson: 'Epson', kyocera: 'Kyocera', xerox: 'Xerox', brother: 'Brother', lexmark: 'Lexmark' },
+                tamano: { a3: 'A3', a4: 'A4' },
+                salida: { color: 'Color', bn: 'B&N' },
+                velocidad: { 'hasta-20': 'Hasta 20 PPM', '21-35': '21-35 PPM', '36-mas': '36+ PPM' }
+            };
+            return labels[filterType]?.[value] || value;
+        }
+
+        // Actualizar filtros activos
+        function updateActiveFilters() {
+            activeFilters = { marca: [], tamano: [], salida: [], velocidad: [] };
+            
+            filterCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    const filterType = checkbox.dataset.filter;
+                    activeFilters[filterType].push(checkbox.value);
+                }
+            });
+
+            renderFilterTags();
+            filterProducts();
+            updateFilterBadge();
+        }
+
+        // Renderizar tags de filtros
+        function renderFilterTags() {
+            // Tags en sidebar
+            let sidebarHtml = '';
+            // Tags en toolbar
+            let toolbarHtml = '';
+            let hasFilters = false;
+
+            Object.keys(activeFilters).forEach(filterType => {
+                activeFilters[filterType].forEach(value => {
+                    hasFilters = true;
+                    const label = getFilterLabel(filterType, value);
+                    
+                    sidebarHtml += `
+                        <span class="filter-tag" data-filter="${filterType}" data-value="${value}">
+                            ${label}
+                            <button onclick="removeFilter('${filterType}', '${value}')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </span>
+                    `;
+
+                    toolbarHtml += `
+                        <span class="toolbar-filter-tag" data-filter="${filterType}" data-value="${value}">
+                            ${label}
+                            <button onclick="removeFilter('${filterType}', '${value}')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </span>
+                    `;
+                });
+            });
+
+            if (hasFilters) {
+                toolbarHtml += `
+                    <button class="clear-all-btn" onclick="clearAllFilters()">
+                        <i class="fas fa-times"></i> Limpiar todo
+                    </button>
+                `;
+            }
+
+            sidebarActiveFilters.innerHTML = sidebarHtml;
+            sidebarActiveFilters.classList.toggle('has-filters', hasFilters);
+            
+            toolbarFilters.innerHTML = toolbarHtml;
+        }
+
+        // Remover un filtro
+        function removeFilter(filterType, value) {
+            const checkbox = document.querySelector(`input[data-filter="${filterType}"][value="${value}"]`);
+            if (checkbox) {
+                checkbox.checked = false;
+                updateActiveFilters();
+            }
+        }
+
+        // Limpiar todos los filtros
+        function clearAllFilters() {
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            updateActiveFilters();
+        }
+
+        // Actualizar badge del boton
+        function updateFilterBadge() {
+            let totalFilters = 0;
+            Object.values(activeFilters).forEach(arr => {
+                totalFilters += arr.length;
+            });
+
+            filterBadge.textContent = totalFilters;
+            filterToggle.classList.toggle('has-filters', totalFilters > 0);
+        }
+
+        // Filtrar productos
+        function filterProducts() {
+            let visibleCount = 0;
+            const hasActiveFilters = Object.values(activeFilters).some(arr => arr.length > 0);
+
+            productCards.forEach(card => {
+                if (!hasActiveFilters) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                    return;
+                }
+
+                let matchesAll = true;
+
+                Object.keys(activeFilters).forEach(filterType => {
+                    if (activeFilters[filterType].length > 0) {
+                        const cardValue = card.dataset[filterType];
+                        if (!activeFilters[filterType].includes(cardValue)) {
+                            matchesAll = false;
+                        }
+                    }
+                });
+
+                if (matchesAll) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            resultsCount.textContent = visibleCount;
+            noResults.classList.toggle('visible', visibleCount === 0);
+        }
+
+        // ===== EVENT LISTENERS =====
+
+        // Toggle sidebar
+        filterToggle.addEventListener('click', toggleSidebar);
+        closeSidebar.addEventListener('click', closeSidebarFn);
+
+        // Toggle secciones de filtro
+        filterSections.forEach(section => {
+            const header = section.querySelector('.filter-section-header');
+            header.addEventListener('click', () => toggleFilterSection(section));
+        });
+
+        // Cambios en checkboxes
+        filterCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateActiveFilters);
+        });
+
+        // Boton limpiar
+        clearFilters.addEventListener('click', clearAllFilters);
+
+        // Boton aplicar (cierra sidebar en movil)
+        applyFilters.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                closeSidebarFn();
+            }
+        });
+
+        // Inicializar
+        updateActiveFilters();
+    </script>
+</body>
+</html>
