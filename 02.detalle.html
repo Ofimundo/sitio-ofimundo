@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle Equipo - Ofimundo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/estilo-cotizaciones.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -111,7 +112,7 @@
                     <div class="grid md:grid-cols-2 gap-8 p-8">
                         <!-- Product Image -->
                         <div class="h-[450px] bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl flex items-center justify-center">
-                            <img src="images/equipos/multifuncional/WF-C5891.png" alt="Impresora" class="w-full h-full object-contain" >
+                            <img src="images/equipos/multifuncional/WF-C5891.png" alt="Multifuncional WF-C5891" class="w-full h-full object-contain" >
                         </div>
                         
                         <!-- Product Info -->
@@ -193,50 +194,37 @@
 
                 <!-- Sección de Servicio -->
                 <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200">
-                    <h2 class="text-2xl font-bold text-ofimundo-navy mb-2">Nuestro servicio asegura tu continuidad operativa</h2>
-                    <p class="text-gray-600 mb-8">Ofrecemos soporte integral para maximizar el rendimiento de tus equipos</p>
-                    
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-xl p-6 shadow-sm">
-                            <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center mb-4">
-                                <svg class="w-8 h-8 text-ofimundo-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-ofimundo-navy mb-2">Gestión de Equipos y Suministros</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Monitoreo predictivo para enviarte el tóner antes de que lo necesites.</p>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl p-6 shadow-sm">
-                            <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-lg flex items-center justify-center mb-4">
-                                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-ofimundo-navy mb-2">Soporte en todo Chile</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Atención remota y presencial con técnicos certificados.</p>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl p-6 shadow-sm">
-                            <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-ofimundo-navy mb-2">Client Succes Manager</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Un ejecutivo dedicado que te acompaña y optimiza tu servicio.</p>
-                        </div>
+                    <img src="images/servicios/banner-titulo.png" alt="Banner-Servicios">
 
-                        <div></div>
+                    <!-- Swiper Productos -->
+                    <div class="swiper swiper-productos">
+                        <div class="swiper-wrapper productos-wrapper">
 
-                        <div class="bg-white rounded-xl p-6 shadow-sm">
-                            <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2"/>
-                                </svg>
+                            <div class="swiper-slide bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-lg transition min-h-[290px] flex flex-col">
+                                <img src="images/servicios/01.servicio.jpg" alt="01.Servicios" class="mb-1">
+                                <h3 class="font-bold text-ofimundo-navy mb-1">Gestión de Equipos y Suministros</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Monitoreo predictivo y tóner a tiempo.</p>
                             </div>
-                            <h3 class="font-bold text-ofimundo-navy mb-2">Mi cuenta cliente / Usuario</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">Plataforma para solicitar soporte, gestionar suministros y administrar tus equipos.</p>
+                            
+                            <div class="swiper-slide bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-lg transition min-h-[290px] flex flex-col">
+                                <img src="images/servicios/02.servicio.jpg" alt="02.Servicios" class="mb-2">
+                                <h3 class="font-bold text-ofimundo-navy mb-2">Soporte en todo Chile</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Atención remota y presencial en todo chile.</p>
+                            </div>
+                            
+                            <div class="swiper-slide bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-lg transition min-h-[290px] flex flex-col">
+                                <img src="images/servicios/03.servicio.png" alt="03.Servicios" class="mb-2">
+                                <h3 class="font-bold text-ofimundo-navy mb-2">Mi cuenta</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Gestiona todo desde nuestra plataforma.</p>
+                            </div>
+
+                            <div></div>
+
+                            <div class="swiper-slide bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-lg transition min-h-[290px] flex flex-col">
+                                <img src="images/servicios/04.servicio.jpg" alt="04.Servicios" class="mb-2">
+                                <h3 class="font-bold text-ofimundo-navy mb-2">Client Succes Manager</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Acompañamiento y optimización continua.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -504,5 +492,24 @@
         </div>
     </footer>
 
+    <!--Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        /* =========================
+        2️⃣ PRODUCTOS
+        ========================= */
+
+        const productosWrapper = document.querySelector('.productos-wrapper');
+        productosWrapper.innerHTML += productosWrapper.innerHTML;
+
+        const swiperProductos = new Swiper('.swiper-productos', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            speed: 10000,
+            freeMode: { enabled: true, momentum: false },
+            autoplay: { delay: 0, disableOnInteraction: false },
+            loop: true,
+        });
+    </script>
 </body>
 </html>
