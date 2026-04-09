@@ -150,9 +150,12 @@ export default async function EquipoDetallePage({ params }: PageProps) {
 
                   {/* CTA Buttons */}
                   <div className="flex items-center gap-3 mt-auto">
-                    <button className="flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:opacity-90 transition">
+                    <Link
+                      href={`/cotizar/${equipo.ID_Producto}`}
+                      className="flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:opacity-90 transition"
+                    >
                       Cotizar
-                    </button>
+                    </Link>
 
                     <a
                       href="https://outlook.office.com/bookwithme/user/5d9fcae1581e49e8be2b6a163ed07576%40ofimundo.cl/meetingtype/x2Au6VY8SU-gJ1Uq4PePCw2?anonymous&ismsaljsauthenabled"
@@ -205,9 +208,12 @@ export default async function EquipoDetallePage({ params }: PageProps) {
               </p>
 
               <div className="flex justify-center gap-4">
-                <button className="px-8 py-3 bg-ofimundo-magenta text-white rounded-lg font-semibold hover:opacity-90 transition">
-                  Solicitar Demo
-                </button>
+                <Link
+                  href={`/cotizar/${equipo.ID_Producto}`}
+                  className="px-8 py-3 bg-ofimundo-magenta text-white rounded-lg font-semibold hover:opacity-90 transition"
+                >
+                  Solicitar Cotización
+                </Link>
                 {equipo.Archivo_PDF_Equipo && (
                   <a
                     href={equipo.Archivo_PDF_Equipo}

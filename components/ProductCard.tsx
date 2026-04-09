@@ -73,9 +73,12 @@ export function ProductCard({ equipo, showBadge = false, badgeText = "DESTACADO"
 
         {/* Botones de acción */}
         <div className="flex items-center gap-3 mt-auto">
-          <button className="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition">
+          <Link
+            href={`/cotizar/${equipo.ID_Producto}`}
+            className="btn-cotizar flex-1 text-center px-4 py-3 bg-gradient-to-br from-[var(--ofimundo-purple)] to-[var(--ofimundo-magenta)] text-white rounded-lg text-sm font-semibold hover:from-[#241a78] hover:to-[#c62842] transition"
+          >
             Cotizar
-          </button>
+          </Link>
 
           <Link
             href={`/equipo/${equipo.ID_Producto}`}
